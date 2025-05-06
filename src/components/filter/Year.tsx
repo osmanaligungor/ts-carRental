@@ -24,7 +24,7 @@ const Year: FC = () => {
       <div className="flex">
         <input
           type="number"
-          className="w-25 py-[6px] px-2 rounded-l-[4px] shadow text-black bg-white border-r border-zinc-300"
+          className="w-26 py-[6px] px-2 rounded-l-[4px] shadow text-black bg-white border-r border-zinc-300"
           placeholder="örn:2023"
           onChange={(e) => setYear(e.target.value)}
           defaultValue={params.get("year") as string}

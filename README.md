@@ -86,12 +86,12 @@ const Form: FC = () => {
 
 1. Modern Hosting Çözümleri
 
-- Projeyi github resposu üzerinden tek tıkla yayınlayabiliyoruz.
-- Vercel, Netlify, Cloudflate Pages, Github Pages
+- Projeyi github reposu üzerinden tek tıkla yayınlayabiliyoruz.
+- Vercel, Netlify, Cloudflare Pages, Github Pages
 
 * Vercel
 
-- Modern framewrokler için tam uyumlu
+- Modern frameworkler için tam uyumlu
 - Ücretsiz planı küçük projeler için ideal
 - Otomatik SSL, CDN, CI/CD (Sürekli Dağıtım)
 
@@ -105,25 +105,26 @@ const Form: FC = () => {
 
 # Alan Adı Domain & SSL
 
-- Web sitesinin kolay hatırlanabilir, güvenli, profosyonel olması için bir alan adı ve ssl sertifikasına ihtiyacı vardır.
+- Web sitesinin kolay hatırlanabilir, güvenli, profesyonel olması için bir alan adı ve ssl sertifikasına ihtiyacı vardır.
 
-- Alan adları ip adresilerini (192.168.1.1) anlamlı hale getiren DNS (Domain Name System) tarafından yönetilir.
+- Alan adları ip adreslerini (192.168.1.1) anlamlı hale getiren DNS (Domain Name System) tarafından yönetilir.
 
 - Alan adı nasıl alınır:
-- Namecheap, Google Domains, GoDady, İsim Tescil vb..
+- Namecheap, Google Domains, GoDady, İsim Tescil vb...
 
 # DNS
 
 - Domain name system, alan adlarını ip adresine çeviren bir sistemdir.
-- Kullanıcılar bir websitesine alan adıyla (www.furkanevin.xyz) erişmek istediklerinde, DNS bu alana adını sunucunun IP adersine çevirir. Böylece, kullanıcı siteye erişmek için karmaşık bir ip adresi yazmak yerine daha basit bir alan adı yazar
+- Kullanıcılar bir websitesine alan adıyla (www.furkanevin.xyz) erişmek istediklerinde, DNS bu alan adını sunucunun IP adersine çevirir. Böylece, kullanıcı siteye erişmek için karmaşık bir ip adresi yazmak yerine daha basit bir alan adı yazar
 
 ## DNS Kayıt Türleri
 
-1. A (Adress) Kaydı: Bir alan adının hangi ip adresine yönlenderileceğini belirler
+1. A (Adress) Kaydı: Bir alan adının hangi ip adresine yönlendirileceğini belirler
 
 - Örneğin "www.furkanevin.xyz" adersine girildiğinde a kaydının değeri olan ip aderesine (192.168.1.1) yönlendirir
 
-2. NS (Name Server) Kaydı: Alan adının hangi ad sunucuları tarafından yönetilidğini belirtir
+2. NS (Name Server) Kaydı: Alan adının hangi ad sunucuları tarafından yönetildiğini belirtir
 
 3. CNAME (Canonical Name) Kaydı: Bir alan adını başka bir alan adına yönlendirir.
+
 # ts-carRental
