@@ -19,10 +19,11 @@ const Year: FC = () => {
 
   return (
     <form className="flex flex-col" onSubmit={handleSubmit}>
-      <label>Yıl:</label>
+      <label htmlFor="year">Yıl:</label>
 
       <div className="flex">
         <input
+          id="year"
           type="number"
           className="w-26 py-[6px] px-2 rounded-l-[4px] shadow text-black bg-white border-r border-zinc-300"
           placeholder="örn:2023"
@@ -30,7 +31,10 @@ const Year: FC = () => {
           defaultValue={params.get("year") as string}
         />
 
-        <button className="bg-white rounded-r px-3 text-blue-500 hover:bg-zinc-300 transition cursor-pointer">
+        <button
+          className="bg-white rounded-r px-3 text-blue-500 hover:bg-zinc-300 transition cursor-pointer"
+          aria-label="Ara"
+        >
           🔎
         </button>
       </div>

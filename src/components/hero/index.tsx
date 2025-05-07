@@ -23,7 +23,7 @@ const Hero: FC = () => {
           animate={{ translateX: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
           src="/hero.png"
-          alt="hero image"
+          alt="gray color bmw image"
           className="object-contain"
         />
       </div>

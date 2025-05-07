@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.furkanevin.xyz/sitemap.xml
+Sitemap: https://www.osmanaligungor.xyz/sitemap.xml

@@ -13,6 +13,7 @@ const Images: FC<Props> = ({ car }) => {
         <img
           src={generateImage(car, undefined, true)}
           className="h-full mx-auto object-cover rounded-md"
+          alt={car.model}
         />
       </div>
 
@@ -21,18 +22,21 @@ const Images: FC<Props> = ({ car }) => {
           <img
             src={generateImage(car, "29")}
             className="mx-auto object-contain min-w-[142px]"
+            alt={car.model}
           />
         </div>
         <div className="rounded flex-1 flex relative h-24 bg-primary-blue-100">
           <img
             src={generateImage(car, "5")}
             className="mx-auto object-contain min-w-[142px]"
+            alt={car.model}
           />
         </div>
         <div className="rounded flex-1 flex relative h-24 bg-primary-blue-100">
           <img
             src={generateImage(car, "09")}
             className="mx-auto object-contain min-w-[142px]"
+            alt={car.model}
           />
         </div>
       </div>
