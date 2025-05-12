@@ -1,130 +1,33 @@
-# Proje Kaynakları
+<h1>Car Rental</h1>
+  
+<p>This project is a modern car rental site built using React/Vite and Typescript. It features a user-friendly design and is developed with the latest technologies, utilizing various npm and React libraries to create a modern structure.</p>
 
-- Araç verileri için API:
-- https://publ1ic.opendatasoft.com/explore/dataset/all-vehicles-model/api/?sort=scharger
+<h1>Features</h1>
 
-- Fotoğraf üretmek için API:
-- https://docs.imagin.studio/guides/getting-images/embedding-in-your-website
-- https://cdn.imagin.studio/getImage?customer=hrjavascript-mastery&make=BMW&modelFamily=m4
+<p>Responsive Layout: In this way, a compatible appearance is provided even on different screen sizes.</p>
+<p>Modern Design.</p>
+<p>Filtering features have been actively implemented, and both filtering sections are functioning properly.</p>
 
-# TS ile React Yazılırken Dikkat
+<h1>Project Link</h1>
+<p>https://ts-car-rental.vercel.app/</p>
 
-- Tip tanımlanabilecek her değişkenin / fonksiyonun tipi tanımlanmalı.
-- Tipi tanımlanmamış bir değişken bile bırakılmamalı
-- Oto tip algılama özelliği olabildiğince az kullanılmalı, mümkünse hiç kullanılmamalı
+<h1>Technologies Used</h1>
 
-## useState
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JAVASCRIPT</li>
+<li>REACT</li>
+<li>VITE</li>
+<li>TYPESCRIPT</li>
+<li>motion</li>
+<li>tailwindcss</li>
+<li>react-select</li>
+<li>react-router-dom</li>
+<li>react-paginate</li>
+<li>https://public.opendatasoft.com/explore/dataset/all-vehicles-model/api/?sort=scharger(for api)</li>
+<li>https://docs.imagin.studio/guides/getting-images/embedding-in-your-website(for car images)</li>
 
-- useState kullanırken state'ini tutucağımız değişkenin tipini useState'e generic olarak gödeririz
+<h1>Preview</h1>
 
-- evet useState oto olarak algılayabilir ama yukarıdada dediğiimiz gibi mümkünse o özelliği hiç kullanmamalıyız
+![Screen Recording 2025-05-12 at 15 45 12](https://github.com/user-attachments/assets/30e233b7-bd1a-407e-bed8-a6cda9b65f89)
 
-## Prop Tipi
-
-- Bir bileşenin aldığı prop'lardan ziyade artık prop'ları tipinide tanımlamak zorundayız.
-
-- Ve bu bilşeni kullanırken tanımladığımız tipteki propları göndermezsek hata alırız
-
-```js
-import React, { FC } from "react";
-
-// Component'ın aldığı prop'larının tipini tanımlama
-type Props = {
-  text: string,
-};
-
-// Component tipi tanımla - RETURN TİPİ OTO ALGILAMA
-const Button = ({ text }: Props) => {
-  return <button>{text}</button>;
-};
-
-// Component tipi tanımla - RETURN TİPİ AYRI PROP TİPİ AYRI
-const Input = ({ text }: Props): JSX.Element => {
-  return <input />;
-};
-
-// Component tipi tanımla - REACT.FC Yöntemi
-const Select: FC<Props> = ({ text }) => {
-  return <select />;
-};
-
-const Form: FC = () => {
-  // form gönderilince
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-  };
-
-  // butona tıklanınca
-  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {};
-
-  // input değişince
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    e.target.value;
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <input onChange={handleChange} type="text" placeholder="İsminiz" />
-
-      <button onClick={handleClick}>gönder</button>
-    </form>
-  );
-};
-```
-
-# Proje Yayınlama Adımları
-
-1. Projenizi Hazırlayın
-2. Alan Adı (Domain) && SSL Kirala
-3. Hosting Platformu Seç
-4. Projeyi hosting ile yayınla (deploy etme)
-5. DNS ayarlarını yap
-6. Web sitesini kontrol et
-7. SEO Kontrolü / İyileştirmesi
-
-# Hosting
-
-1. Modern Hosting Çözümleri
-
-- Projeyi github reposu üzerinden tek tıkla yayınlayabiliyoruz.
-- Vercel, Netlify, Cloudflare Pages, Github Pages
-
-* Vercel
-
-- Modern frameworkler için tam uyumlu
-- Ücretsiz planı küçük projeler için ideal
-- Otomatik SSL, CDN, CI/CD (Sürekli Dağıtım)
-
-2. Geleneksel Hosting Çözümleri
-
-- Kendi sunucumuzu kiralayıp her şeyi manuel olarak yapıyoruz.
-
-- VPS (Virtual Private Server): Digital Ocean, Linode, Vultr
-- AWS S3
-- Firebase Hosting
-
-# Alan Adı Domain & SSL
-
-- Web sitesinin kolay hatırlanabilir, güvenli, profesyonel olması için bir alan adı ve ssl sertifikasına ihtiyacı vardır.
-
-- Alan adları ip adreslerini (192.168.1.1) anlamlı hale getiren DNS (Domain Name System) tarafından yönetilir.
-
-- Alan adı nasıl alınır:
-- Namecheap, Google Domains, GoDady, İsim Tescil vb...
-
-# DNS
-
-- Domain name system, alan adlarını ip adresine çeviren bir sistemdir.
-- Kullanıcılar bir websitesine alan adıyla (www.furkanevin.xyz) erişmek istediklerinde, DNS bu alan adını sunucunun IP adersine çevirir. Böylece, kullanıcı siteye erişmek için karmaşık bir ip adresi yazmak yerine daha basit bir alan adı yazar
-
-## DNS Kayıt Türleri
-
-1. A (Adress) Kaydı: Bir alan adının hangi ip adresine yönlendirileceğini belirler
-
-- Örneğin "www.furkanevin.xyz" adersine girildiğinde a kaydının değeri olan ip aderesine (192.168.1.1) yönlendirir
-
-2. NS (Name Server) Kaydı: Alan adının hangi ad sunucuları tarafından yönetildiğini belirtir
-
-3. CNAME (Canonical Name) Kaydı: Bir alan adını başka bir alan adına yönlendirir.
-
-# ts-carRental
