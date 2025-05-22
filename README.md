@@ -24,8 +24,8 @@
 <li>react-select</li>
 <li>react-router-dom</li>
 <li>react-paginate</li>
-<li>https://public.opendatasoft.com/explore/dataset/all-vehicles-model/api/?sort=scharger(for api)</li>
-<li>https://docs.imagin.studio/guides/getting-images/embedding-in-your-website(for car images)</li>
+<li>https://public.opendatasoft.com/explore/dataset/all-vehicles-model/api/?sort=scharger (for api)</li>
+<li>https://docs.imagin.studio/guides/getting-images/embedding-in-your-website (for car images)</li>
 
 <h1>Preview</h1>
 
